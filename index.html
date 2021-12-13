@@ -12,6 +12,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="styles.min.css">
     <script src="index.js"></script>
 </head>
 <body onload="myDate()" id="tsparticles">
@@ -25,7 +27,7 @@
         <a href="#projects">Projects</a>
         <a href="#contacts">Contact Me</a>
     </div>
-    <div class="hbm"><!--hamburger menu-->
+    <!-- <div class="hbm">hamburger menu
         <div class="logo">
             <img src="Company Logo.png" alt="Logo" width="60px"  height="60px">
         </div>
@@ -37,6 +39,32 @@
             <a href="#contacts">Contact Me</a>
         </div>
         <i class="fa fa-bars" id="hm" onclick="Hamburger()"></i>
+    </div> -->
+    <div class="hbm">
+        <div class="logo">
+            <img src="Company Logo.png" alt="Logo" width="60px"  height="60px">
+        </div>
+        <nav id="circle-nav-wrapper" class="circle-nav-wrapper">
+            <div class="circle-nav-toggle"><i class="fa fa-plus"></i></div>
+            <div class="circle-nav-panel"></div>
+            <ul class="circle-nav-menu">
+                <a href="#landing" class="circle-nav-item circle-nav-item-1">
+                    <i class="fa fa-home"></i>
+                </a>
+                <a href="#about" class="circle-nav-item circle-nav-item-2">
+                    <i class="fa fa-address-card"></i>
+                </a>
+                <a href="#services" class="circle-nav-item circle-nav-item-3">
+                    <i class="fa fa-list-alt"></i>
+                </a>
+                <a href="#projects" class="circle-nav-item circle-nav-item-4">
+                    <i class="fa fa-tasks"></i>
+                </a>
+                <a href="#contacts" class="circle-nav-item circle-nav-item-5">
+                    <i class="fa fa-address-book"></i>
+                </a>
+            </ul>
+        </nav>
     </div>
     <div class="landing" id="landing"><!--use css grids-->
         <div class="p1" >HI THERE &#128516, I'M</div>
@@ -95,7 +123,7 @@
         <div class="projectContainer" id="prCont">
             <div class="flip-container" data-aos="fade-up">
                 <div class="flipper">
-                    <div class="front artist-1">
+                    <div class="front artist-1" id="artist-1">
                         <!-- front content -->
                     </div>
                     <div class="back">
@@ -109,7 +137,7 @@
             </div>
             <div class="flip-container" data-aos="fade-up">
                 <div class="flipper">
-                    <div class="front artist-2">
+                    <div class="front artist-2" id="artist-2">
                         <!-- front content -->
                     </div>
                     <div class="back">
@@ -123,7 +151,7 @@
             </div>
             <div class="flip-container" data-aos="fade-up">
                 <div class="flipper">
-                    <div class="front artist-3">
+                    <div class="front artist-3" id="artist-3">
                         
                     </div>
                     <div class="back">
@@ -231,6 +259,9 @@
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/     6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous">
+</script>
+<script src="scripts.min.js"></script>
 <script src="https://kit.fontawesome.com/2df2ff6a6a.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.37.2/tsparticles.min.js"></script>
 <script>
