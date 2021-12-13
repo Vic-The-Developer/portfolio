@@ -27,9 +27,9 @@ nav{
     position: relative;
 }
 .logo{
+    flex-grow: 8;
     padding-top: 16px;
-    padding-left: 0%;
-    position: absolute;
+    padding-left: 8%;
     color: white;
 }
 .hbm{
