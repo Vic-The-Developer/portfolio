@@ -777,6 +777,12 @@ nav{
     .hdr1, .hdr2{
         margin-bottom: 8%;
     }
+    .p5{
+        text-align: left;
+    }
+    .projectContainer{
+        overflow: hidden;
+    }
     .mePic{
         float: left;
         width: 160px;
