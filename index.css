@@ -672,6 +672,24 @@ nav{
         flex-flow: column;
     }
 }
+@media screen and (max-width: 790px) {
+    .navbar{
+        column-gap: 2px;
+        height: 23%;
+    }
+    .landing{
+        height: auto;
+    }
+    .landing div{
+        padding-bottom: 30px;
+    }
+    .about{
+        height: auto;
+    }
+    .footer{
+        height: auto;
+    }
+}
 @media screen and (max-width: 600px) {
     *{
         box-sizing: border-box;
