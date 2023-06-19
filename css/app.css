@@ -1,0 +1,11 @@
+/* #tsparticles {
+    background;
+    width: 100%;
+    background-color: #0ab1e9;
+    height: 100%;
+} */
+#tsparticles {
+    /*   background: cornflowerblue; */
+    position: absolute;
+    /* z-index: -2; */
+}
