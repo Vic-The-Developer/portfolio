@@ -85,8 +85,8 @@ body{
     src: url('Ekors.otf');
 }
 .p2{
-    font-size: 90px;
-    padding-top: 10px;
+    font-size: 86px;
+    padding-top: 1px;
     font-weight: bolder;
     grid-area: p2;
     font-family: brushed;
@@ -102,7 +102,8 @@ body{
 }
 .p3{
     color: rgb(0, 255, 255);
-    font-size: 23px;
+    font-size: 25px;
+    padding-top: 21px;
     font-weight: bold;
     grid-area: p3;
 }
@@ -152,7 +153,7 @@ body{
     position: relative;
     overflow-x: hidden;
     padding: 100px;
-    height: 94%;
+    
     display: grid;
     grid-template-columns: 45% 30%;
     grid-template-rows: 10% 10% 80%;
@@ -169,7 +170,9 @@ body{
     position: relative;
     grid-area: mePic;
     z-index: 3;
+    height: 85%;
     width: 100%;
+    margin-top: 80px;
     background: linear-gradient(0deg, #000, #272727)
 }
 .mePic:before, .mePic:after {
@@ -250,7 +253,6 @@ body{
 
 /*Services Section*/
 .services{
-    height: 90%;
     z-index: 2;
     padding: 100px;
     overflow-x: hidden;
@@ -387,12 +389,35 @@ body{
     transform: scale(1);
     transition: all .25s;
 }
+.posters .imagesP{
+    width: 90%;
+}
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    text-align: center;
+}
+.imagesP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+.imagesP img {
+    margin: 10px;
+    max-width: 60%;
+}
 .posters img:nth-child(7n + 1) {
     grid-column: 2 / span 2;
 }
 .posters img:hover{
     z-index: 2;
-    transform: scale(2);
+    transform: scale(1.03);
+    cursor: pointer;
 }
 .websites{
     position: relative;
@@ -699,7 +724,7 @@ body{
         box-sizing: border-box;
     }
     .navbar{
-        display: none;
+        display: none !important;
     }
     .logo{
         padding-top: 4px;

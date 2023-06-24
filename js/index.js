@@ -21,3 +21,27 @@ bttn.addEventListener('click', ()=>{
 function myDate(){
     document.getElementById('date').innerHTML= new Date().getFullYear();
 }
+
+//Modal
+document.addEventListener("DOMContentLoaded", function() {
+  const modalOverlay = document.getElementById("modalOverlay");
+  const modal = document.querySelector(".modal");
+  const closeBtn = document.getElementById("closeBtn");
+
+  // Open modal
+  document.querySelector("img").addEventListener("click", function() {
+    modalOverlay.style.display = "flex";
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", function() {
+    modalOverlay.style.display = "none";
+  });
+
+  // Close modal when clicking outside the content
+  modalOverlay.addEventListener("click", function(event) {
+    if (event.target === modalOverlay) {
+      modalOverlay.style.display = "none";
+    }
+  });
+});
